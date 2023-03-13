@@ -12,3 +12,35 @@ main {
 
 
 /* Background colors */
+
+.bg-color-main {
+    background-color: #11e084;
+}
+
+
+/* Logo */
+
+nav .brand-logo {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    padding: 0 0 0 2%;
+}
+
+
+/* Footer */
+
+footer a {
+    color: white;
+}
+
+.social i {
+    font-size: 200%;
+    padding-left: 3%;
+}
+
+.contact i {
+    font-size: 200%;
+    padding-right: 3%;
+}
+
+
