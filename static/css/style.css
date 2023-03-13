@@ -3,6 +3,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -10,8 +11,4 @@ main {
 }
 
 
-/* Navbar */
-
-.nav-wrapper {
-    background-color: aquamarine;
-}
+/* Background colors */
