@@ -24,12 +24,12 @@ class Booking(models.Model):
     time = models.IntegerField(choices=BOOKING_TIME, default=1)
     guests = models.IntegerField(default=1)
     special_request = models.TextField(max_length=200, blank=True)
-    table_id = models.ForeignKey(Table, on_delete=models.CASCADE,
-                                 related_name='booked_table')
+    table_number = models.ManyToManyField(Table, related_name='booked_table')
+    updated = models.BooleanField(default=True)
 
     class Meta:
         """ Order bookings by date """
         ordering = ['date']
 
     def __str__(self):
-        return self.id
+        return f"Booking ID: {self.id}"
